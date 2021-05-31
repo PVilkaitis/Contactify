@@ -1,0 +1,110 @@
+.filter{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+.filter>h1{
+    color: #fff;
+    margin-left: 70px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -0.5px;
+}
+.filter>form{
+    display: flex;
+    align-items: center;
+    background-color: #2164b5;
+    height: 90px;
+    width: 850px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.active{
+    display: flex;
+    align-items: center;
+}
+.filter>form>input{
+    margin: 10px 10px 10px 20px;
+    width: 150px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+    color: #fff;
+    padding-bottom: 3px;
+    font-size: 17px;
+}
+.filter>form>input::placeholder{
+    color: #fff;
+    font-size: 17px;
+}
+.selectCity {
+    margin: 10px;
+    width: 150px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+    color: #fff;
+    padding-bottom: 3px;
+    font-size: 17px;
+}
+.selectCity>option{
+    background-color: #2164b5;
+}
+.active{
+    margin: 10px;
+}
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    border: 2px solid #4eb7be;
+    justify-content: center; 
+    align-items: center;
+    background-color: #fff;  
+    cursor: pointer;
+}
+input[type=checkbox]:checked {
+    background-color: #4eb7be;
+}
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+input[type=checkbox]:after {
+    background-color: #4eb7be;
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    color: #fff;
+    font-weight: 900;
+    font-size: 11px;
+    display: none;
+}
+input[type=checkbox]:checked:after {
+    display: block;
+}
+.active>label{
+    margin: 5px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+.filter>form>button{
+    margin: 10px 10px 15px 30px;
+    background-color: #4eb7be;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 30px 8px 30px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+}
+.filter>form>button:hover{
+    color: #4eb7be;
+    background-color: #fff;
+}
